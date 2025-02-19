@@ -24,6 +24,9 @@ app.get('/status', async (req, res) => {
     const status = await isItRaining();
     res.json(status);
 });
+app.get('/', (req, res) => {
+    res.send('Backend is running! Go to <a href="/status">/status</a> to check the rain status.');
+});
 
 // Ensure Vercel detects this as a backend API
 module.exports = app;
