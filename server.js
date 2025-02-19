@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // OpenWeatherMap API (Replace with your actual API key)
 const WEATHER_API_KEY = "0e3442cf34d7c4281dd2aab37f3fa310";
-const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=${0e3442cf34d7c4281dd2aab37f3fa310}&units=metric`;
+const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=${WEATHER_API_KEY}&units=metric`;
 
 async function isItRaining() {
     try {
